@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>South Indian Restaurant - Payment</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(120deg, #ff8a00, #e52e71);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .payment-box {
+      background-color: white;
+      padding: 30px;
+      border-radius: 20px;
+      width: 350px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      animation: fadeIn 1s ease;
+    }
+
+    h2 {
+      text-align: center;
+      color: maroon;
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin: 10px 0 5px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      transition: 0.3s ease;
+    }
+
+    input:focus {
+      outline: none;
+      border-color: #e52e71;
+      box-shadow: 0 0 5px #e52e71;
+    }
+
+    .btn {
+      width: 100%;
+      background-color: maroon;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: white;
+      color: maroon;
+      border: 1px solid maroon;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="payment-box">
+    <h2>Make a Payment</h2>
+    <form action="thankyou.html" method="POST">
+      <label for="name">Customer Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="order">Order Name</label>
+      <input type="text" id="order" name="order" required />
+
+      <label for="amount">Amount (₹)</label>
+      <input type="number" id="amount" name="amount" required />
+
+      <label for="payment">Payment Method</label>
+      <select id="payment" name="payment" required>
+        <option value="UPI">UPI</option>
+        <option value="card">Credit / Debit Card</option>
+        <option value="cod">Cash on Delivery</option>
+      </select>
+
+      <button type="submit" class="btn">
+      <a href="sucess.html">Pay now</a>
+      </button>
+    </form>
+  </div>
+
+
+  <script>
+    function showPaymentSuccess() {
+  alert("✅ Payment Successful!");
+  window.location.href = "sucess.html"; // redirect to another page
+}
+  </script>
+</body>
+</html>

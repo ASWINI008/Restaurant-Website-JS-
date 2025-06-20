@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  body {
+    background-color: lightsalmon;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+
+  h1 {
+    text-align: center;
+    color: maroon;
+    margin-bottom: 40px;
+  }
+
+  .category {
+    font-size: 24px;
+    margin: 20px 0 10px;
+    color: darkred;
+    animation: fadeInUp 1s ease-in-out;
+  }
+
+  .menu-row {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 20px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+  }
+
+  .box {
+    flex: 0 0 auto;
+    width: 200px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    animation: fadeUp 0.6s ease-in-out both;
+    transition: transform 0.3s ease;
+  }
+
+  .box:hover {
+    transform: scale(1.08);
+  }
+
+  .box img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10%;
+    margin: auto;
+    animation: popIn 0.8s ease;
+  }
+
+  .box h3 {
+    margin-top: 10px;
+    color: darkgreen;
+    font-size: 16px;
+  }
+
+ 
+  .locations {
+    background-color: rgb(161, 156, 156);
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 40px;
+  }
+
+  #location-heading {
+    text-align: center;
+    color: maroon;
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .locations h2 {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  address {
+    text-transform: lowercase;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  /*Animations */
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes popIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.7);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+</style>
+
+</head>
+<body>
+      <h1>MENU</h1>
+  <div class="category">Breakfast</div>
+  <div class="menu-row">
+    <div class="box">
+        <img src="./images/IMG-20250612-WA0016.jpg"><h3>DOSA - ₹10</h3>
+    </div>
+    <div class="box">
+        <img src="./images/IMG-20250612-WA0017.jpg"><h3>MASALA DOSA - ₹20</h3>
+    </div>
+    <div class="box">
+      <img src="./images/IMG-20250612-WA0023.jpg"><h3>RAVA IDLI - ₹10</h3>
+   </div>
+    <div class="box">
+      <img src="./images/IMG-20250612-WA0022.jpg"><h3>AAPAM - ₹10</h3>
+    </div>
+    <div class="box">
+      <img src="./images/breakfast3.jpg"><h3>CHAPATHI - ₹10</h3>
+     
+    </div>
+    <div class="box">
+      <img src="./images/IMG-20250612-WA0021.jpg"><h3>SAMBAR VADA - ₹10</h3>
+    </div>
+    </div>
+    
+    
+    
+    
+    <div class="category">Lunch</div>
+    <div class="menu-row">
+    <div class="box">
+       <img src="./images/IMG-20250612-WA0027.jpg"><h3>VEG BIRYANI - ₹80</h3>
+    </div>
+    <div class="box">
+      <img src="./images/IMG-20250612-WA0026.jpg"><h3>VEG MEALS - ₹90</h3>
+    </div>
+    <div class="box">
+      <img src="./images/WhatsApp Image 2025-06-13 at 06.23.17_daf8a4b5.jpg"><h3>NON VEG MEALS - ₹110</h3>
+    </div>
+    <div class="box">
+      <img src="./images/IMG-20250612-WA0024.jpg"><h3>CHICKEN BIRYANI - ₹100</h3>
+    </div>
+    <div class="box">
+      <img src="./images/IMG-20250612-WA0025.jpg"><h3>MUTTON BIRYANI - ₹110</h3>
+    </div>
+    <div class="box">
+       <img src="./images/lunch2.jpg"><h3>FISH FRY - ₹50</h3>
+    </div>
+  </div>
+  
+  
+  
+  <div class="category">Chats</div>
+  <div class="menu-row">
+    <div class="box"><img src="./images/IMG-20250613-WA0009.jpg"><h3>TEA - ₹10</h3>
+    </div>
+    <div class="box"><img src="./images/COFEE.jpg"><h3>COFFEE - ₹10</h3>
+    </div>
+    <div class="box"><img src="./images/SAMOSA.jpg"><h3>SAMOSA - ₹20</h3>
+    </div>
+    <div class="box"><img src="./images/IMG-20250613-WA0011.jpg"><h3>MASALA POORI - ₹20</h3>
+   </div>
+    <div class="box"><img src="./images/PANIPURI.jpg"><h3>PANI PURI - ₹20</h3>
+  </div>
+    <div class="box"><img src="./images/IMG-20250613-WA0010.jpg"><h3>BHEL PURI - ₹20</h3>
+    </div>
+  </div>
+  <div class="category">Dinner</div>
+  <div class="menu-row">
+    <div class="box">
+       <img src="./images/IMG-20250612-WA0028.jpg"><h3>DOSA & MASALA DOSA - ₹20</h3>
+    </div>
+    <div class="box">
+       <img src="./images/IMG-20250613-WA0004.jpg"><h3>IDLI - ₹10</h3>
+    </div>
+    <div class="box">
+       <img src="./images/IMG-20250613-WA0005.jpg"><h3>SAMBAR IDLI - ₹10</h3>
+    </div>
+    <div class="box">
+       <img src="./images/IMG-20250612-WA0020.jpg"><h3>CHAPATHI - ₹15</h3>
+    </div>
+    <div class="box">
+       <img src="./images/PAROOTA.jpg"><h3>PAROTTA - ₹15</h3>
+    </div>
+    <div class="box">
+        <img src="./images/IMG-20250613-WA0003.jpg"><h3>KOTHU PAROTTA - ₹30</h3>
+    </div>
+  </div>
+  
+</body>
+</html>

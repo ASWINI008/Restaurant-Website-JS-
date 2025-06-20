@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cart Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff8f0;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #c0392b;
+    }
+
+    .cart-container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fefefe;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .cart-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+      padding: 10px 0;
+    }
+
+    .cart-item:last-child {
+      border-bottom: none;
+    }
+
+    .item-details {
+      flex-grow: 1;
+    }
+
+    .item-details h3 {
+      margin: 0;
+      font-size: 1.1rem;
+    }
+
+    .item-details p {
+      margin: 3px 0;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    .item-price {
+      font-weight: bold;
+      color: green;
+    }
+
+    .total {
+      text-align: right;
+      margin-top: 20px;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .pay-btn {
+      display: block;
+      margin: 30px auto 0;
+      background-color: #27ae60;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .pay-btn:hover {
+      background-color: #1e8449;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Your Cart</h1>
+
+  <div class="cart-container">
+    <div class="cart-item">
+      <div class="item-details">
+        <h3>Rava dosa</h3>
+        <p>Qty: 2</p>
+        <p>Request: Extra crispy</p>
+      </div>
+      <div class="item-price">₹20</div>
+    </div>
+
+    <div class="cart-item">
+      <div class="item-details">
+        <h3>Masala Dosa</h3>
+        <p>Qty: 1</p>
+        <p>Request: No onion</p>
+      </div>
+      <div class="item-price">₹20</div>
+    </div>
+
+    <div class="total">Total: ₹40</div>
+
+    <button class="pay-btn">
+        <a href="payment.html" style="text-decoration: none; color: white;">
+            Proceed to Payment
+        </a>
+    </button>
+  </div>
+
+</body>
+</html>

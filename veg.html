@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body {
+    background-color: darksalmon;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .category {
+    margin-bottom: 40px;
+  }
+
+  .main-item {
+    display: flex;
+    align-items: center;
+    background-color: #ffefd5;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    margin-bottom: 10px;
+  }
+
+  .main-item:hover {
+    transform: scale(1.02);
+  }
+
+  .main-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 12px;
+    object-fit: cover;
+    margin-right: 20px;
+  }
+
+  .main-item p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #bf360c;
+    margin: 0;
+  }
+ 
+  .varieties {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center items horizontally */
+  gap: 25px;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: lightsalmon;
+  border-radius: 10px;
+}
+
+  
+.box {
+  background-color: whitesmoke;
+  width: 260px;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+  .box:hover {
+    transform: translateY(-5px);
+  }
+
+  .box img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .box h3 {
+    margin: 10px 0 5px;
+    color: #e65100;
+    font-size: 1.2rem;
+  }
+
+  .price {
+    color: green;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .quantity-input,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+
+  button {
+    width: 100%;
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  button a {
+    color: white;
+    text-decoration: none;
+  }
+
+  button:hover {
+    background-color: #e64a19;
+  }
+  h1{
+     background-color: darksalmon;
+     color: darkred;
+     text-align: center;
+
+  }
+  
+</style>
+</style>
+
+</head>
+<body>
+    <h1>VEG MENUS</h1>
+    <div class="category">
+        <div class="main-item" onclick="toggleVarieties('dosa')">
+          <img src="./images/IMG-20250612-WA0016.jpg" alt="Dosa">
+          <p><strong>Dosa-Varities</strong></p>
+        </div>
+         <div id="dosa" class="varieties">
+        <div class="box">
+        <img src="./images/IMG-20250612-WA0016.jpg" alt="">
+        <h3>Plain Dosa</h3>
+        <p class="price">₹10</p>
+        <input class="quantity-input" type="number" placeholder="Quantity" min="1">
+        <textarea rows="2" placeholder="Cooking request"></textarea>
+        <button><a href="card.html">Add to cart</a></button>
+      </div>
+      <div class="box">
+        <img src="./images/podi dosa.jpg" alt="">
+        <h3>Podi Dosa</h3>
+        <p class="price">₹15</p>
+        <input class="quantity-input" type="number" placeholder="Quantity" min="1">
+        <textarea rows="2" placeholder="Cooking request"></textarea>
+        <button><a href="card.html">Add to cart</a></button>
+      </div>
+      <!-- (add all dosa items here, already done) -->
+      <div class="box">
+        <img src="./images/panner dosa.jpg" alt="">
+        <h3>panner Dosa</h3>
+        <p class="price">₹10</p>
+        <input class="quantity-input" type="number" placeholder="Quantity" min="1">
+        <textarea rows="2" placeholder="Cooking request"></textarea>
+        <button><a href="card.html">Add to cart</a></button>
+      </div>
+      <div class="box">
+        <img src="./images/IMG-20250612-WA0017.jpg" alt="">
+        <h3>Masala Dosa</h3>
+        <p class="price">₹20</p>
+        <input class="quantity-input" type="number" placeholder="Quantity" min="1">
+        <textarea rows="2" placeholder="Cooking request"></textarea>
+        <button><a href="card.html">Add to cart</a></button>
+      </div>
+      <div class="box">
+        <img src="./images/rava dosa.jpg" alt="">
+        <h3>Rava Dosa</h3>
+        <p class="price">₹10</p>
+        <input class="quantity-input" type="number" placeholder="Quantity" min="1">
+        <textarea rows="2" placeholder="Cooking request"></textarea>
+        <button><a href="card.html">Add to cart</a></button>
+      </div>
+      <div class="box">
+        <img src="./images/mushrrom dosa.jpg" alt="">
+        <h3>Mushroom Dosa</h3>
+        <p class="price">₹10</p>
+        <input class="quantity-input" type="number" placeholder="Quantity" min="1">
+        <textarea rows="2" placeholder="Cooking request"></textarea>
+        <button><a href="card.html">Add to cart</a></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Idli -->
+  <div class="category">
+    <div class="main-item" onclick="toggleVarieties('idli')">
+      <img src="./images/IMG-20250613-WA0004.jpg" alt="Idli">
+      <p><strong>Idli Varieties</strong></p>
+    </div>
+    <div id="idli" class="varieties">
+      <!-- (add all idli items here, already done) -->
+       <div class="box">
+        <img src="./images/IMG-20250613-WA0005.jpg" alt="">
+        <h3>Sambar Idli</h3>
+        <p class="price">₹15</p>
+        <input class="quantity-input" type="number" placeholder="Quantity" min="1">
+        <textarea rows="2" placeholder="Cooking request"></textarea>
+        <button><a href="card.html">Add to cart</a></button>
+      </div>
+      <div class="box">
+        <img src="./images/thattu idli.jpg" alt="">
+        <h3>Thattu Idli</h3>
+        <p class="price">₹20</p>
+        <input class="quantity-input" type="number" placeholder="Quantity" min="1">
+        <textarea rows="2" placeholder="Cooking request"></textarea>
+        <button><a href="card.html">Add to cart</a></button>
+      </div>
+      <div class="box">
+        <img src="./images/chilli idli.webp" alt="">
+        <h3>Chilli Idli</h3>
+        <p class="price">₹10</p>
+        <input class="quantity-input" type="number" placeholder="Quantity" min="1">
+        <textarea rows="2" placeholder="Cooking request"></textarea>
+        <button><a href="card.html">Add to cart</a></button>
+      </div>
+      <div class="box">
+        <img src="./images/download (3).jpg" alt="">
+        <h3>Podi Idli</h3>
+        <p class="price">₹10</p>
+        <input class="quantity-input" type="number" placeholder="Quantity" min="1">
+        <textarea rows="2" placeholder="Cooking request"></textarea>
+        <button><a href="card.html">Add to cart</a></button>
+      </div>
+      <div class="box">
+        <img src="./images/download (2).jpg" alt="">
+        <h3>Ghee Podi Idli</h3>
+        <p class="price">₹10</p>
+        <input class="quantity-input" type="number" placeholder="Quantity" min="1">
+        <textarea rows="2" placeholder="Cooking request"></textarea>
+        <button><a href="card.html">Add to cart</a></button>
+      </div>
+      <div class="box">
+        <img src="./images/download (1).jpg" alt="">
+        <h3>Kothu Idli</h3>
+        <p class="price">₹10</p>
+        <input class="quantity-input" type="number" placeholder="Quantity" min="1">
+        <textarea rows="2" placeholder="Cooking request"></textarea>
+        <button><a href="card.html">Add to cart</a></button>
+      </div>
+    </div>
+  </div>
+      
+     
+  <!-- chapathi varities-->
+  <div class="category">
+    <div class="main-item" onclick="toggleVarieties('chapathi')">
+      <img src="./images/dishes_to_eat_with_roti_a90fae92-1b5f-45e0-84d8-9a1bca0dea23.jpg" alt="Chapathi">
+      <p><strong>Tandoor Varieties</strong></p>
+    </div>
+    <div id="chapathi" class="varieties">
+      <div class="box">
+        <img src="./images/Delectable-Bread-Varieties-at-Mira-Restaurant.jpg" alt="">
+        <h3>Chapathi with veg cuury</h3>
+        <p class="price">₹80</p>
+        <input class="quantity-input" type="number" placeholder="Quantity" min="1">
+        <textarea rows="2" placeholder="Cooking request"></textarea>
+        <button><a href="card.html">Add to cart</a></button>
+      </div>
+      <div class="box">
+        <img src="./images/IMG-20250612-WA0020.jpg" alt="">
+        <h3>Chapathi with palak panner</h3>
+        <p class="price">₹20</p>
+        <input class="quantity-input" type="number" placeholder="Quantity" min="1">
+        <textarea rows="2" placeholder="Cooking request"></textarea>
+        <button><a href="card.html">Add to cart</a></button>
+      </div>
+      <div class="box">
+        <img src="./images/chapathi withm.jpg" alt="">
+        <h3>Chapathi with mushroom gravy</h3>
+        <p class="price">₹20</p>
+        <input class="quantity-input" type="number" placeholder="Quantity" min="1">
+        <textarea rows="2" placeholder="Cooking request"></textarea>
+        <button><a href="card.html">Add to cart</a></button>
+      </div>
+      <div class="box">
+        <img src="./images/chapathi with panner.jpg" alt="">
+        <h3>Chapathi with paneer masala</h3>
+        <p class="price">₹100</p>
+        <input class="quantity-input" type="number" placeholder="Quantity" min="1">
+        <textarea rows="2" placeholder="Cooking request"></textarea>
+        <button><a href="card.html">Add to cart</a></button>
+      </div>
+      <div class="box">
+        <img src="./images/IMG-20250612-WA0018.jpg" alt="">
+        <h3>Poori Masala</h3>
+        <p class="price">₹100</p>
+        <input class="quantity-input" type="number" placeholder="Quantity" min="1">
+        <textarea rows="2" placeholder="Cooking request"></textarea>
+        <button><a href="card.html">Add to cart</a></button>
+      </div>
+      <div class="box">
+        <img src="./images/naan.jpg" alt="">
+        <h3>Naan with Butter paneer masala</h3>
+        <p class="price">₹100</p>
+        <input class="quantity-input" type="number" placeholder="Quantity" min="1">
+        <textarea rows="2" placeholder="Cooking request"></textarea>
+        <button><a href="card.html">Add to cart</a></button>
+      </div>
+    </div>
+    </div>
+     
+
+
+    <div class="category">
+    <div class="main-item" onclick="toggleVarieties('parotta')">
+      <img src="./images/PAROOTA.jpg" alt="Parotta">
+      <p><strong>Parotta Varieties</strong></p>
+    </div>
+    <div id="parotta" class="varieties">
+      <div class="box">
+        <img src="./images/PAROOTA.jpg" alt="">
+        <h3>Normal Parotta with veg salna</h3>
+        <p class="price">₹15</p>
+        <input class="quantity-input" type="number" placeholder="Quantity" min="1">
+        <textarea rows="2" placeholder="Cooking request"></textarea>
+        <button><a href="card.html">Add to cart</a></button>
+      </div>
+      </div>
+      </div>
+
+
+      <div class="category">
+    <div class="main-item" onclick="toggleVarieties('soups')">
+      <img src="./images/soup.jpg" alt="Chapathi">
+      <p><strong>Soup Varieties</strong></p>
+    </div>
+    <div id="soups" class="varieties">
+      <div class="box">
+        <img src="./images/veg soup.jpg" alt="">
+        <h3>Veg Soup</h3>
+        <p class="price">₹20</p>
+        <input class="quantity-input" type="number" placeholder="Quantity" min="1">
+        <textarea rows="2" placeholder="Cooking request"></textarea>
+        <button><a href="card.html">Add to cart</a></button>
+      </div>
+      <div class="box">
+        <img src="./images/download (4).jpg" alt="">
+        <h3>Mushroom Soup</h3>
+        <p class="price">₹50</p>
+        <input class="quantity-input" type="number" placeholder="Quantity" min="1">
+        <textarea rows="2" placeholder="Cooking request"></textarea>
+        <button><a href="card.html">Add to cart</a></button>
+      </div>
+      </div>
+      </div>
+
+
+
+      <!-- Biryani -->
+  <div class="category">
+    <div class="main-item" onclick="toggleVarieties('biryani')">
+      <img src="./images/IMG-20250612-WA0024.jpg" alt="Biryani">
+      <p><strong>Biryani varities</strong></p>
+    </div>
+    <div id="biryani" class="varieties">
+      <!-- (add all biryani items here, already done) -->
+       <div class="box">
+        <img src="./images/IMG-20250612-WA0027.jpg" alt="">
+        <h3>Veg Biryani</h3>
+        <p class="price">₹90</p>
+        <input class="quantity-input" type="number" placeholder="Quantity" min="1">
+        <textarea rows="2" placeholder="Cooking request"></textarea>
+        <button><a href="card.html">Add to cart</a></button>
+      </div>
+      <div class="box">
+        <img src="./images/mushroom biryani.jpg" alt="">
+        <h3>Mushroom Biryani</h3>
+        <p class="price">₹90</p>
+        <input class="quantity-input" type="number" placeholder="Quantity" min="1">
+        <textarea rows="2" placeholder="Cooking request"></textarea>
+        <button><a href="card.html">Add to cart</a></button>
+      </div>
+      <div class="box">
+        <img src="./images/paneer bir.jpg" alt="">
+        <h3>Paneer Biryani</h3>
+        <p class="price">₹80</p>
+        <input class="quantity-input" type="number" placeholder="Quantity" min="1">
+        <textarea rows="2" placeholder="Cooking request"></textarea>
+        <button><a href="card.html">Add to cart</a></button>
+      </div>
+    </div>
+    </div>
+
+
+     <!-- Noodles Var -->
+  <div class="category">
+    <div class="main-item" onclick="toggleVarieties('noodles')">
+      <img src="./images/veg nood.jpg" alt="Fried Rice">
+      <p><strong>Noodles Varieties</strong></p>
+    </div>
+    <div id="noodles" class="varieties">
+       <div class="box">
+        <img src="./images/veg nood.jpg" alt="">
+        <h3>Veg Noodles</h3>
+        <p class="price">₹90</p>
+        <input class="quantity-input" type="number" placeholder="Quantity" min="1">
+        <textarea rows="2" placeholder="Cooking request"></textarea>
+        <button><a href="card.html">Add to cart</a></button>
+      </div>
+      <div class="box">
+        <img src="./images/panner nood.jpg" alt="">
+        <h3>Paneer Noodles</h3>
+        <p class="price">₹90</p>
+        <input class="quantity-input" type="number" placeholder="Quantity" min="1">
+        <textarea rows="2" placeholder="Cooking request"></textarea>
+        <button><a href="card.html">Add to cart</a></button>
+      </div>
+      <div class="box">
+        <img src="./images/mushrroom nood.jpg" alt="">
+        <h3>Mushroom Noodles</h3>
+        <p class="price">₹110</p>
+        <input class="quantity-input" type="number" placeholder="Quantity" min="1">
+        <textarea rows="2" placeholder="Cooking request"></textarea>
+        <button><a href="card.html">Add to cart</a></button>
+      </div>
+      </div>
+      </div>
+
+      
+  <!-- Fried Rice -->
+  <div class="category">
+    <div class="main-item" onclick="toggleVarieties('friedrice')">
+      <img src="./images/veg fried rice.jpg" alt="Fried Rice">
+      <p><strong>Fried Rice Varieties</strong></p>
+    </div>
+    <div id="friedrice" class="varieties">
+       <div class="box">
+        <img src="./images/veg fried rice.jpg" alt="">
+        <h3>Veg Fried Rice</h3>
+        <p class="price">₹90</p>
+        <input class="quantity-input" type="number" placeholder="Quantity" min="1">
+        <textarea rows="2" placeholder="Cooking request"></textarea>
+        <button><a href="card.html">Add to cart</a></button>
+      </div>
+      <div class="box">
+        <img src="./images/panner fried rice.jpg" alt="">
+        <h3>Paneer Fried Rice</h3>
+        <p class="price">₹90</p>
+        <input class="quantity-input" type="number" placeholder="Quantity" min="1">
+        <textarea rows="2" placeholder="Cooking request"></textarea>
+        <button><a href="card.html">Add to cart</a></button>
+      </div>
+      <div class="box">
+        <img src="./images/garlic fried rice.jpg" alt="">
+        <h3>Garlic fried Rice</h3>
+        <p class="price">₹110</p>
+        <input class="quantity-input" type="number" placeholder="Quantity" min="1">
+        <textarea rows="2" placeholder="Cooking request"></textarea>
+        <button><a href="card.html">Add to cart</a></button>
+      </div>
+      <div class="box">
+        <img src="./images/mushrrom fried rice.jpg" alt="">
+        <h3>Mushroom fried Rice</h3>
+        <p class="price">₹110</p>
+        <input class="quantity-input" type="number" placeholder="Quantity" min="1">
+        <textarea rows="2" placeholder="Cooking request"></textarea>
+        <button><a href="card.html">Add to cart</a></button>
+      </div>
+      </div>
+      </div>
+
+
+      <!-- Starters-->
+   <div class="category">
+    <div class="main-item" onclick="toggleVarieties('starters')">
+      <img src="./images/WhatsApp Image 2025-06-19 at 20.24.29_7467d800.jpg" alt="Tea">
+      <p><strong>STARTERS</strong></p>
+    </div>
+    <div id="starters" class="varieties">
+      <div class="box">
+        <img src="./images/gobi manuch.jpg" alt="">
+        <h3>Gobi Manchurian</h3>
+        <p class="price">₹60</p>
+        <input class="quantity-input" type="number" placeholder="Quantity" min="1">
+        <textarea rows="2" placeholder="Cooking request"></textarea>
+        <button><a href="card.html">Add to cart</a></button>
+      </div>
+      <div class="box">
+        <img src="./images/download.jpg" alt="">
+        <h3>Mushroom Manchurian</h3>
+        <p class="price">₹20</p>
+        <input class="quantity-input" type="number" placeholder="Quantity" min="1">
+        <textarea rows="2" placeholder="Cooking request"></textarea>
+        <button><a href="card.html">Add to cart</a></button>
+      </div>
+      <div class="box">
+        <img src="./images/veg cutlet.jpg" alt="">
+        <h3>Veg Cutlet</h3>
+        <p class="price">₹60</p>
+        <input class="quantity-input" type="number" placeholder="Quantity" min="1">
+        <textarea rows="2" placeholder="Cooking request"></textarea>
+        <button><a href="card.html">Add to cart</a></button>
+      </div>
+      <div class="box">
+        <img src="./images/cauli 65.jpg" alt="">
+        <h3>CauliFlower 65</h3>
+        <p class="price">₹50</p>
+        <input class="quantity-input" type="number" placeholder="Quantity" min="1">
+        <textarea rows="2" placeholder="Cooking request"></textarea>
+        <button><a href="card.html">Add to cart</a></button>
+      </div>
+      <div class="box">
+        <img src="./images/panner 65.jpg" alt="">
+        <h3>Paneer 65</h3>
+        <p class="price">₹60</p>
+        <input class="quantity-input" type="number" placeholder="Quantity" min="1">
+        <textarea rows="2" placeholder="Cooking request"></textarea>
+        <button><a href="card.html">Add to cart</a></button>
+      </div>
+      <div class="box">
+        <img src="./images/panner tikka.jpg" alt="">
+        <h3>Panner Tikka</h3>
+        <p class="price">₹90</p>
+        <input class="quantity-input" type="number" placeholder="Quantity" min="1">
+        <textarea rows="2" placeholder="Cooking request"></textarea>
+        <button><a href="card.html">Add to cart</a></button>
+      </div>
+      <div class="box">
+        <img src="./images/potato sticks.jpg" alt="">
+        <h3>Potato Sticks</h3>
+        <p class="price">₹50</p>
+        <input class="quantity-input" type="number" placeholder="Quantity" min="1">
+        <textarea rows="2" placeholder="Cooking request"></textarea>
+        <button><a href="card.html">Add to cart</a></button>
+      </div>
+      <div class="box">
+        <img src="./images/chicken manu.jpg" alt="">
+        <h3>Chicken Manchurian</h3>
+        <p class="price">₹250</p>
+        <input class="quantity-input" type="number" placeholder="Quantity" min="1">
+        <textarea rows="2" placeholder="Cooking request"></textarea>
+        <button><a href="card.html">Add to cart</a></button>
+      </div>
+      </div>
+      </div>
+
+      <!-- Tea / Snacks -->
+  <div class="category">
+    <div class="main-item" onclick="toggleVarieties('tea')">
+      <img src="./images/IMG-20250613-WA0009.jpg" alt="Tea">
+      <p><strong>Tea / Snacks</strong></p>
+    </div>
+    <div id="tea" class="varieties">
+      <div class="box">
+        <img src="./images/IMG-20250613-WA0009.jpg" alt="">
+        <h3>Tea</h3>
+        <p class="price">₹10</p>
+        <input class="quantity-input" type="number" placeholder="Quantity" min="1">
+        <textarea rows="2" placeholder="Cooking request"></textarea>
+        <button><a href="card.html">Add to cart</a></button>
+      </div>
+      <div class="box">
+        <img src="./images/COFEE.jpg" alt="">
+        <h3>Coffee</h3>
+        <p class="price">₹10</p>
+        <input class="quantity-input" type="number" placeholder="Quantity" min="1">
+        <textarea rows="2" placeholder="Cooking request"></textarea>
+        <button><a href="card.html">Add to cart</a></button>
+      </div>
+      <div class="box">
+        <img src="./images/SAMOSA.jpg" alt="">
+        <h3>Samosa</h3>
+        <p class="price">₹20</p>
+        <input class="quantity-input" type="number" placeholder="Quantity" min="1">
+        <textarea rows="2" placeholder="Cooking request"></textarea>
+        <button><a href="card.html">Add to cart</a></button>
+      </div>
+      <div class="box">
+        <img src="./images/IMG-20250613-WA0011.jpg" alt="">
+        <h3>Masala Poori</h3>
+        <p class="price">₹20</p>
+        <input class="quantity-input" type="number" placeholder="Quantity" min="1">
+        <textarea rows="2" placeholder="Cooking request"></textarea>
+        <button><a href="card.html">Add to cart</a></button>
+      </div>
+      <div class="box">
+        <img src="./images/PANIPURI.jpg" alt="">
+        <h3>Pani Puri</h3>
+        <p class="price">₹20</p>
+        <input class="quantity-input" type="number" placeholder="Quantity" min="1">
+        <textarea rows="2" placeholder="Cooking request"></textarea>
+        <button><a href="card.html">Add to cart</a></button>
+      </div>
+      <div class="box">
+        <img src="./images/IMG-20250613-WA0010.jpg" alt="">
+        <h3>Bhel Puri</h3>
+        <p class="price">₹20</p>
+        <input class="quantity-input" type="number" placeholder="Quantity" min="1">
+        <textarea rows="2" placeholder="Cooking request"></textarea>
+        <button><a href="card.html">Add to cart</a></button>
+      </div>
+    </div>
+  </div>
+  
+
+  <script>
+  function toggleVarieties(id) {
+    var section = document.getElementById(id);
+    if (section.style.display === "block") {
+      section.style.display = "none";
+    } else {
+      section.style.display = "block";
+    }
+  }
+
+  // Initially hide all varieties
+  window.onload = () => {
+    const all = document.querySelectorAll(".varieties");
+    all.forEach(div => div.style.display = "none");
+  };
+</script>
+
+
+</body>
+</html>
